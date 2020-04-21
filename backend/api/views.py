@@ -101,7 +101,7 @@ class PriceALL(generics.GenericAPIView):
 
     def get(self,request):
         window = -50 #number of data points
-        data = pd.read_csv('~/Desktop/desktop/Anurag/others/prashant/data.csv')
+        data = pd.read_csv('../backend/resources/data.csv')
         temp = data.iloc[window:].set_index('time')
         return JsonResponse(temp.to_dict(),safe=False)
 
@@ -112,3 +112,7 @@ class PriceALL(generics.GenericAPIView):
 def check(request):
     print(request.body)
     return JsonResponse({"check":'ok'})
+
+
+
+
