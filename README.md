@@ -1,5 +1,14 @@
 
 --------
+### What It Does
+
+This projects simply simulate real time stock price visualization where the data is kept locally 
+and being updated periodically using data manager ( data_manager.py ) 
+which create data.csv from stock_prices.csv
+The data shown in graph is being taken from data.csv 
+
+
+--------
 ### Steps
 
 Clone repo and enter the repo 
@@ -38,7 +47,4 @@ On second terminal migrate and run django server
     cd backend
     cd resouces
     python3 data_manager.py
-
-	
- 
 
